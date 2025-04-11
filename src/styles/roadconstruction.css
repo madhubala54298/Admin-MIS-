@@ -1,0 +1,229 @@
+/* General Styles */
+.road-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  color: #0d6efd;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Subcategory Section */
+.subcategory-section {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.subcategory-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.subcategory-card {
+  background: linear-gradient(145deg, #e3e7ee, #ffffff);
+  border: 1px solid #dfe4ea;
+  padding: 12px;
+  width: 180px;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 8px #dcdde1, -3px -3px 8px #ffffff;
+}
+
+.subcategory-card:hover {
+  transform: scale(1.08);
+  background: #e8eff6;
+}
+
+/* Search & Filter */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-box, .status-filter {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.search-box {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search-box:focus, .status-filter:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(13, 110, 253, 0.4);
+}
+
+/* Buttons */
+.add-project-btn {
+  background: #198754;
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+  width: 220px;
+  margin: 0 auto 20px auto;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-project-btn:hover {
+  background: #146c43;
+}
+
+/* Project Table */
+.project-table-container {
+  overflow-x: auto;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-table th, .project-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.project-table th {
+  background: #0d6efd;
+  color: white;
+  font-size: 15px;
+}
+
+.project-table tr:hover {
+  background: #f8f9fa;
+}
+
+/* Buttons for Actions */
+.edit-btn, .delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #000;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  margin-left: 8px;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Modal (Form) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.modal-content input, .modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.modal-content button[type="submit"] {
+  background: #0d6efd;
+  color: white;
+}
+
+.modal-content button[type="submit"]:hover {
+  background: #0b5ed7;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #5a6268;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

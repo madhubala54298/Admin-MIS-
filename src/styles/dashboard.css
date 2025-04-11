@@ -1,0 +1,150 @@
+/* General Styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(120deg, #f4f4f9, #dbe2ef);
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #2C3E50;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.dark-mode-toggle,
+.logout-btn {
+  background: #1ABC9C;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  margin-top: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.logout-btn {
+  background: #E74C3C;
+}
+
+.dark-mode-toggle:hover,
+.logout-btn:hover {
+  opacity: 0.8;
+}
+
+/* Main Dashboard */
+.main-dashboard {
+  flex: 1;
+  padding: 30px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  color: #2C3E50; /* Dark slate color for visibility */
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Optional subtle glow */
+}
+
+.dashboard-sections {
+  display: flex;
+  gap: 15px;
+}
+
+.dashboard-card {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: white;
+  padding: 22px;
+  text-align: center;
+  flex: 1;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05);
+}
+
+/* Charts Section */
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.chart-card {
+  width: 48%;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Extra Features */
+.extra-features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  width: 48%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #2C3E50;
+  color: white;
+}
+
+/* Specific Styling for Welcome Admin Text */
+.profile-card h3 {
+  color: #FFD700; /* Bright Yellow for visibility */
+}

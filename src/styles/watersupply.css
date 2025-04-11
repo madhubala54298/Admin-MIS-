@@ -1,0 +1,176 @@
+/* Water Supply Section Styles */
+.water-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #eef7ff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.water-container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title & Subtitle */
+.title {
+  text-align: center;
+  color: #1d5ea8;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #4a789c;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Subcategories */
+.water-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.water-card {
+  flex: 1 1 calc(30% - 20px);
+  background: linear-gradient(135deg, #72c6f3, #246bb2);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  min-width: 220px;
+}
+
+.water-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Budget Section */
+.water-budget {
+  margin-top: 40px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.water-budget:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.budget-title {
+  font-size: 24px;
+  color: #1a4b82;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.water-budget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.water-budget ul li {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #d7ecff;
+  border-left: 6px solid #1d5ea8;
+  margin: 8px 0;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.water-budget ul li:hover {
+  background: #c6e0ff;
+}
+
+/* Project Tracking */
+.project-list {
+  margin-top: 40px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-list:hover {
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+  font-size: 24px;
+  color: #1a4b82;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.project-table th {
+  background-color: #1d5ea8;
+  color: white;
+  font-weight: bold;
+}
+
+/* Add Project */
+.add-project-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.add-project-form input {
+  padding: 12px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.add-project-btn {
+  background: #1d5ea8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.add-project-btn:hover {
+  background: #163e6e;
+  transform: scale(1.05);
+}

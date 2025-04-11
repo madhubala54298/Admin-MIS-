@@ -1,0 +1,217 @@
+/* Enhanced CSS for Bridge Construction */
+
+.bridge-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  background: #f5f9ff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+  text-align: center;
+  color: #1b263b;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #415a77;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Bridge Sections */
+.bridge-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.bridge-card {
+  width: 250px;
+  height: 200px;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.bridge-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-front {
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-back {
+  background: white;
+  color: #1d3557;
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Project List */
+.project-list {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 25px;
+}
+
+.project-title {
+  font-size: 24px;
+  color: #1d3557;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Project Table */
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: center;
+}
+
+.project-table th {
+  background: #1d3557;
+  color: white;
+}
+
+.project-table tr:nth-child(even) {
+  background: #eef5ff;
+}
+
+/* Add Project Button */
+.add-project-btn {
+  display: block;
+  margin: 20px auto;
+  background: #1d3557;
+  color: white;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-project-btn:hover {
+  background: #102a43;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content input,
+.modal-content select {
+  width: 90%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  margin: 5px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background: #1d3557;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background: #e63946;
+  color: white;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.85;
+}
+
+/* Back Button */
+.back-button {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}

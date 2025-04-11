@@ -1,0 +1,181 @@
+/* Land Development Section Styles */
+.land-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #eef5f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title & Subtitle */
+.land-title {
+  text-align: center;
+  color: #245c2e;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.land-subtitle {
+  text-align: center;
+  color: #446d53;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Subcategories Section */
+.land-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.land-card {
+  flex: 1 1 calc(30% - 20px);
+  background: linear-gradient(135deg, #6bbe6b, #388e3c);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.land-card:hover {
+  transform: scale(1.08);
+}
+
+/* Budget Section */
+.land-budget-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.land-budget-section .land-section-title {
+  font-size: 22px;
+  color: #245c2e;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Budget List */
+.land-budget-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.land-budget-section ul li {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #dff1e3;
+  border-left: 5px solid #4caf50;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+/* Project Tracking */
+.land-project-list {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.land-project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.land-project-table th, .land-project-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.land-project-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Add Project Button */
+.land-add-project-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.land-add-project-btn:hover {
+  background: #2e7d32;
+}
+
+/* Modal */
+.land-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.land-modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.land-modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.land-modal-buttons button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.land-modal-buttons button:first-child {
+  background: #4caf50;
+  color: white;
+  border: none;
+}
+
+.land-modal-buttons button:last-child {
+  background: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.land-modal-buttons button:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,154 @@
+/* Drainage System Container */
+.drainage-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
+}
+
+.drainage-container:hover {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Title & Subtitle */
+.title {
+  text-align: center;
+  color: #1d4f91;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #4a6786;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Subcategories */
+.drainage-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.drainage-card {
+  flex: 1 1 calc(30% - 20px);
+  background: linear-gradient(135deg, #6ab3f8, #1a66c4);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  min-width: 220px;
+}
+
+.drainage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Budget Section */
+.drainage-budget {
+  margin-top: 40px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.budget-title {
+  font-size: 24px;
+  color: #1a4b82;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.drainage-budget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drainage-budget ul li {
+  padding: 12px;
+  font-size: 16px;
+  background: #d7ecff;
+  border-left: 6px solid #1d5ea8;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+/* Project Tracking */
+.project-list {
+  margin-top: 40px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.project-title {
+  font-size: 24px;
+  color: #1a4b82;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.project-table th {
+  background-color: #1d5ea8;
+  color: white;
+  font-weight: bold;
+}
+
+/* Add Project */
+.add-project-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.add-project-form input {
+  padding: 12px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-project-btn {
+  background: #1d5ea8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-project-btn:hover {
+  background: #163e6e;
+  transform: scale(1.05);
+}

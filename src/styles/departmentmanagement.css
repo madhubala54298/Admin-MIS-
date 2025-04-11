@@ -1,0 +1,114 @@
+.department-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f5f0ff, #e6e0ff);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c2c2c;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.department-container h2 {
+  color: #4a00b4;
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Form Styling */
+.department-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.department-form input {
+  padding: 10px 14px;
+  border: 1px solid #b7a9ff;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.department-form input:focus {
+  border-color: #6c4aff;
+  outline: none;
+}
+
+/* Add Button */
+.department-form button {
+  background-color: #6c4aff;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.department-form button:hover {
+  background-color: #5029d0;
+  transform: scale(1.05);
+}
+
+/* Table Styling */
+.department-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.department-table th,
+.department-table td {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.department-table th {
+  background-color: #d7c7ff;
+  color: #3d0086;
+}
+
+.department-table tr:hover {
+  background-color: #f4efff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #cc3b3b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
