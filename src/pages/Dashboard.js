@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line } from "recharts";
 import "../styles/dashboard.css";
+import Chatbot from "../pages/Chatbot"; // ✅ correct path from your dashboard file
+
+
+
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -105,6 +109,8 @@ const Dashboard = () => {
             <p>✅ Completion Rate: <strong>85%</strong></p>
           </div>
         </div>
+        <Chatbot />
+
       </div>
     </div>
   );

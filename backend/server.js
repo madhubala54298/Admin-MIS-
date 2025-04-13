@@ -10,6 +10,8 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+
+
 // ✅ Connect to MySQL Database
 const db = mysql.createConnection({
     host: "localhost",
@@ -590,7 +592,7 @@ app.delete("/api/tasks/:id", (req, res) => {
 // ✅ ADMIN MANAGEMENT SECTION END
 // =====================================
 
-//Start Server
+
 //Start Server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);

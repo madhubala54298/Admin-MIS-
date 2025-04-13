@@ -17,6 +17,7 @@ import LeavePayrollManagement from "./pages/LeavePayrollManagement";
 import TaskManagement from "./pages/TaskManagement";
 import DocumentManagement from "./pages/DocumentManagement";
 
+
 const App = () => {
   return (
     <Router>
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/leave-payroll-management" element={<LeavePayrollManagement />} />
         <Route path="/document-management" element={<DocumentManagement />} />
         <Route path="/task-management" element={<TaskManagement />} />
+
       </Routes>
     </Router>
   );
