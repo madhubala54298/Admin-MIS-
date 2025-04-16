@@ -5,6 +5,7 @@ import "../styles/documentmanagement.css";
 const DocumentManagement = () => {
   const [documents, setDocuments] = useState([]);
   const [newDoc, setNewDoc] = useState("");
+  const [docType, setDocType] = useState("Other");
 
   // Fetch documents on component load
   useEffect(() => {
@@ -20,8 +21,8 @@ const DocumentManagement = () => {
       axios
         .post("http://localhost:5000/api/documents", {
           name: newDoc,
-          type: "Other", // default value
-          uploadedBy: "Admin", // can make dynamic if needed
+          type: docType,
+          uploadedBy: "Admin",
         })
         .then(() => {
           return axios.get("http://localhost:5000/api/documents");
@@ -29,6 +30,7 @@ const DocumentManagement = () => {
         .then((res) => {
           setDocuments(res.data);
           setNewDoc("");
+          setDocType("Other");
         })
         .catch((err) => console.error("Error uploading document:", err));
     }
@@ -56,6 +58,17 @@ const DocumentManagement = () => {
           value={newDoc}
           onChange={(e) => setNewDoc(e.target.value)}
         />
+        <select value={docType} onChange={(e) => setDocType(e.target.value)} className="type-dropdown">
+          <option value="Report">Report</option>
+          <option value="Invoice">Invoice</option>
+          <option value="Contract">Contract</option>
+          <option value="Policy">Policy</option>
+          <option value="Manual">Manual</option>
+          <option value="Certificate">Certificate</option>
+          <option value="Form">Form</option>
+          <option value="Proposal">Proposal</option>
+          <option value="Other">Other</option>
+        </select>
         <button onClick={handleUpload} className="upload-btn">📤 Upload</button>
       </div>
 
